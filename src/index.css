@@ -259,3 +259,111 @@
       0 0 40px hsl(var(--accent-cyan) / 0.4);
   }
 }
+
+/* ---------------- RESPONSIVE ENHANCEMENTS ---------------- */
+
+/* Large tablets and below */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  .text-glow,
+  .text-glow-cyan {
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.6),
+                 0 0 16px hsl(var(--primary) / 0.4);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .glow-box {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.2);
+  }
+
+  .animate-float {
+    animation-duration: 5s; /* slightly faster for mobile responsiveness */
+  }
+
+  .animate-pulse-glow {
+    animation-duration: 2.5s;
+  }
+
+  .animate-scan {
+    animation-duration: 5s;
+  }
+
+  .animate-glitch {
+    animation-duration: 0.25s;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .text-glow,
+  .text-glow-cyan {
+    text-shadow: 0 0 6px hsl(var(--primary) / 0.5),
+                 0 0 12px hsl(var(--primary) / 0.3);
+  }
+
+  .animate-float {
+    animation-duration: 4s;
+  }
+
+  .animate-scan {
+    animation-duration: 6s;
+  }
+
+  /* Reduce heavy effects for performance */
+  .glow-box {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
